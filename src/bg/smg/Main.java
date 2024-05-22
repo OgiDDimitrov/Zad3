@@ -12,7 +12,7 @@ public class Main {
     public static void main(String[] args) {
         PriorityBlockingQueue<Product> products = new PriorityBlockingQueue<Product>(100, new ProductComparator());
         try {
-            ProductThread t1 = new ProductThread("CKThread", "calvin_klein.txt", products);
+            ProductThread t1 = new ProductThread("CKThread", "ck.txt", products);
             ProductThread t2 = new ProductThread("GuessThread", "guess.txt", products);
             ProductThread t3 = new ProductThread("TrussardiThread", "trussardi.txt", products);
 
