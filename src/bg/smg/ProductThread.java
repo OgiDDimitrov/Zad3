@@ -9,7 +9,7 @@ public class ProductThread extends Thread {
     private String filename;
     private PriorityBlockingQueue<Product> products;
 
-    ProductThread(String name, String filename, PriorityBlockingQueue<Product> products) {
+    ProductThread (String name, String filename, PriorityBlockingQueue<Product> products) {
         super(name);
         this.filename = filename;
         this.products = products;
