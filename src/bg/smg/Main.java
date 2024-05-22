@@ -10,7 +10,7 @@ import java.util.concurrent.PriorityBlockingQueue;
 
 public class Main {
     public static void main(String[] args) {
-        PriorityBlockingQueue<Product> products = new PriorityBlockingQueue<Product>(100, new ProductComparator());
+        PriorityBlockingQueue<Product> products = new PriorityBlockingQueue<Product>(10, new ProductComparator());
         try {
             ProductThread t1 = new ProductThread("CKThread", "ck.txt", products);
             ProductThread t2 = new ProductThread("GuessThread", "guess.txt", products);
